@@ -1,0 +1,19 @@
+{
+  "name": "create-react-app-unity",
+  "version": "1.1.0",
+  "bin": {
+    "create-react-app-unity": "index.js"
+  },
+  "description": "A CLI to automatically clone the REACT UNITY",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Student-unITy/create-app.git"
+  },
+  "keywords": [],
+  "author": "UnITy",
+  "license": "MIT"
+}
