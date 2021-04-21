@@ -1,8 +1,8 @@
 {
-  "name": "create-app",
-  "version": "1.1.0",
+  "name": "create-app-unity",
+  "version": "1.1.4",
   "bin": {
-    "create-app": "index.js"
+    "create-app-unity": "index.js"
   },
   "description": "A CLI to automatically clone the REACT UNITY",
   "main": "index.js",

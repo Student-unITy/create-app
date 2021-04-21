@@ -6,7 +6,7 @@ const name = process.argv[2];
 if (!name || name.match(/[<>:"\/\\|?*\x00-\x1F]/)) {
   return console.log(`
   Invalid directory name.
-  Usage: create-react-app-unity name-of-api  
+  Usage: create-app-unity name-of-api  
 `);
 }
 
@@ -17,7 +17,7 @@ runCommand('git', ['clone', repoURL, name])
     return runCommand('rm', ['-rf', `${name}/.git`]);
   }).then(() => {
     console.log('Installing dependencies...');
-    return runCommand('npm', ['install'], {
+    return runCommand('yarn', {
       cwd: process.cwd() + '/' + name
     });
   }).then(() => {
@@ -25,7 +25,7 @@ runCommand('git', ['clone', repoURL, name])
     console.log('');
     console.log('To get started:');
     console.log('cd', name);
-    console.log('npm run dev');
+    console.log('yarn start :rocket:');
   });
 
 function runCommand(command, args, options = undefined) {
