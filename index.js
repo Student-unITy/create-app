@@ -16,16 +16,15 @@ runCommand('git', ['clone', repoURL, name])
   .then(() => {
     return runCommand('rm', ['-rf', `${name}/.git`]);
   }).then(() => {
-    console.log('Installing dependencies...');
+    console.log('🛠Installing dependencies...🛠');
     return runCommand('yarn', {
       cwd: process.cwd() + '/' + name
     });
   }).then(() => {
-    console.log('Done! 🏁');
-    console.log('');
-    console.log('To get started:');
-    console.log('cd', name);
-    console.log('yarn start :rocket:');
+    console.log('🏁Done! 🏁');
+    console.log('▶️ To get started:');
+    console.log('▶️ cd', name);
+    console.log('▶️ yarn start ✌️');
   });
 
 function runCommand(command, args, options = undefined) {
