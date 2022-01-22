@@ -1,8 +1,11 @@
-# Create App
+# Create React App
 
-- client (react)
+- ▶️ Client (React)
+
+```
+create-app-unity name-of-api  
+```
 
 ## Features
 
-- Server (node)
-- Server (php)
+- Server (node/express js)
